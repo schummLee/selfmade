@@ -39,3 +39,22 @@ private:
     union { T1 t1; T2 t2; };
     int currentIndex;
 };
+#include <cstdint>
+#include <type_traits>
+
+template <char C, std::uint32_t PrevHash>
+struct CompileTimeHashChar { static constexpr std::uint32_t value = (PrevHash * 31) + static_cast<std::uint32_t>(C); };
+template <std::uint32_t PrevHash>
+struct CompileTimeHashChar<'\0', PrevHash> { static constexpr std::uint32_t value = PrevHash; };
+
+template <const char *Str, std::size_t N, std::uint32_t PrevHash = 0>
+struct CompileTimeHash {
+    static constexpr std::uint32_t value =  
+        CompileTimeHash<Str, N - 1, CompileTimeHashChar<Str[N - 1], PrevHash>::value>::value;
+};
+
+template <const char *Str, std::uint32_t PrevHash>
+struct CompileTimeHash<Str, 0, PrevHash> { static constexpr std::uint32_t value = PrevHash; };
+static constexpr const char test_str[] = "hello";
+static constexpr std::uint32_t hash_value = CompileTimeHash<test_str, sizeof(test_str) - 1>::value;
+static_assert(hash_value != 0, "Hash calculation failed!");
