@@ -1,49 +1,40 @@
 .screenrc
-# no welcome message
-startup_message off
-
-# 256 colors
-attrcolor b ".I"
-termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
-defbce on
-
-# mouse tracking allows to switch region focus by clicking
-mousetrack on
-
-# default windows
-screen -t Shell1  1 bash
-screen -t Shell2  2 bash
-screen -t Python  3 python
-screen -t Media   4 bash
-select 0
-bind c screen 1 # window numbering starts at 1 not 0
-bind 0 select 10
-
-# get rid of silly xoff stuff
-bind s split
-
-# layouts
-layout autosave on
-layout new one
-select 1
-layout new two
-select 1
-split
-resize -v +8
-focus down
-select 4
-focus up
-layout new three
-select 1
-split
-resize -v +7
-focus down
-select 3
-split -v
-resize -h +10
-focus right
-select 4
-focus up
-
-layout attach one
-layout select one
+  1 caption string "%{= kw} "
+  2 rendition so "="
+  3 
+  4 startup_message off
+  5 
+  6 screen -t List  1 bash
+  7 screen -t Code1  2 bash
+  8 screen -t Code2  3 bash
+  9 screen -t Terminal   4 bash
+ 10 
+ 11 layout save code
+ 12 layout autosave on
+ 13 
+ 14 layout new code
+ 15 select 1
+ 16 layout new two
+ 17 select 1
+ 18 split
+ 19 resize -h 30
+ 20 focus down
+ 21 select 2
+ 22 split -v
+ 23 split
+ 24 focus down
+ 25 select 3
+ 26 focus down
+ 27 select 4
+ 28 resize -v 15
+ 29 
+ 30 layout attach code
+ 31 layout select code
+ 32 
+ 33 # navigating regions with Ctrl-arrows
+ 34 bindkey "^[[1;5D" focus left
+ 35 bindkey "^[[1;5C" focus right
+ 36 bindkey "^[[1;5A" focus up
+ 37 bindkey "^[[1;5B" focus down
+ 38 
+ 39 
