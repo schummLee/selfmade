@@ -1,40 +1,40 @@
 .screenrc
-  1 caption string "%{= kw} "
-  2 rendition so "="
-  3 
-  4 startup_message off
-  5 
-  6 screen -t List  1 bash
-  7 screen -t Code1  2 bash
-  8 screen -t Code2  3 bash
-  9 screen -t Terminal   4 bash
- 10 
- 11 layout save code
- 12 layout autosave on
- 13 
- 14 layout new code
- 15 select 1
- 16 layout new two
- 17 select 1
- 18 split
- 19 resize -h 30
- 20 focus down
- 21 select 2
- 22 split -v
- 23 split
- 24 focus down
- 25 select 3
- 26 focus down
- 27 select 4
- 28 resize -v 15
- 29 
- 30 layout attach code
- 31 layout select code
- 32 
- 33 # navigating regions with Ctrl-arrows
- 34 bindkey "^[[1;5D" focus left
- 35 bindkey "^[[1;5C" focus right
- 36 bindkey "^[[1;5A" focus up
- 37 bindkey "^[[1;5B" focus down
- 38 
- 39 
+  caption string "%{= kw} "
+  rendition so "="
+  
+  startup_message off
+  
+  screen -t List  1 bash
+  screen -t Code1  2 bash
+  screen -t Code2  3 bash
+  screen -t Terminal   4 bash
+  
+  layout save code
+  layout autosave on
+  
+  layout new code
+  select 1
+  layout new two
+  select 1
+  split
+  resize -h 30
+  focus down
+  select 2
+  split -v
+  split
+  focus down
+  select 3
+  focus down
+  select 4
+  resize -v 15
+  
+  layout attach code
+  layout select code
+  
+  # navigating regions with Ctrl-arrows
+  bindkey "^[[1;5D" focus left
+  bindkey "^[[1;5C" focus right
+  bindkey "^[[1;5A" focus up
+  bindkey "^[[1;5B" focus down
+  
+  
