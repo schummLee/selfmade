@@ -1,6 +1,8 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <chrono>
+#include <thread>
 
 class artist_model 
 {
@@ -12,7 +14,7 @@ class artist_model
 			long long artist_PID;
 			std::string artist_name;
 			std::vector<std::pair<long long,std::string>> album_PID;
-		}
+		}		
 		void function_for_testing_GET(struct artist_info_structure info);
 		extern artist_info_structure artist_GET();
 	public :
@@ -27,7 +29,7 @@ std::string output_inital_message()
 {
 	std::string str;
 	std::cout << "inital_starting..." ;
-	sleep(1);
+	std::this_thread::sleep_for(std::chrono::milliseconds(100));
 	std::cout << "testing framework started successfully" << str ;
 	return str;
 }
