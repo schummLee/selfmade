@@ -110,7 +110,40 @@ void calling_invoked_suspend_proc_in_wait
 
 // feiue karus , god und vetherluand;
 
+extern inline void test_1_1000()
+{
+}
 
+void define_cast_type_initalized()
+{
+}
+
+struct if_static_cast_is_unpermitted
+{
+    void define_cast_type_initalized();
+    unsigned short char revoke_all_mem;
+    int syscall_ID;
+    extern inline bool code_detected;
+    unsigned long long index_cstr;
+}
+
+extern if_static_cast_is_unpermitted engage_engage__()
+{
+    struct if_static_cast_is_unpermitted revoke;
+    return revoke;
+}
+
+// this will be the new standard for future project
+    // each project will at least make its structure-like root in a seperated file and extern
+
+
+// There is some overhead with adding threads to do parallel processing 
+// so make sure that you give each thread enough work to make up for it. 
+// Usually you will, but if each thread only ends up with 1 computation 
+// to do and the computations aren't that difficult to do then you may 
+// actually slow things down. 
+// You can always have fewer threads than you have processors 
+// if that is the case.
 
 
 
