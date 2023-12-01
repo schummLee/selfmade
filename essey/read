@@ -1,1 +1,13 @@
 
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{\href{https://github.com/schummLee/selfmade}{SelfMade}}} \hfill \color[HTML]{371e77} Sep. 2022 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Educational Repository for Low-Level Programming (C)}} \hfill \color[HTML]{4B28A4} \textit{C, YouTube} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Created for educational purposes and featured in teaching videos on the \href{https://www.youtube.com/channel/UCkAFd86ZTxq6II8AIUcYTKw}{YouTube channel}.
+        \item Focuses on low-level programming concepts, predominantly using the C programming language.
+        \item Content includes tutorials, demonstrations, and hands-on exercises to facilitate learning in the field of low-level programming.
+        \item The project is available on \href{https://github.com/schummLee/selfmade}{GitHub} to supplement and enhance the learning experience for viewers interested in delving into the intricacies of C and low-level programming.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
