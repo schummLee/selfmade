@@ -6,3 +6,4 @@ here i will provide with detail ortention about the features of api framework an
 in 2017 this will create by auther of oroject wrest and here we can maintain thou standard function and add new ones
 i will keep reupdate and relay on this new account since 2019
 i will intriduce the wfrest shortly
+The project, named "Advanced Data Structures Library (ADSLib)," is an open-source collection of efficient data structures implemented in both C++ and C. It aims to provide a comprehensive set of data structures for developers working on performance-critical applications.
