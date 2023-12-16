@@ -12,3 +12,17 @@
 \end{minipage}
 \end{tabularx}
 essay 12 cjeck 11000
+The examples are heavily commented so there is no separate page to describe them. Below are brief descriptions and order that I believe should be good for a beginner.
+Introduction
+
+    Hello World (code). A very simple example that shows how to create Const Ops that take scalar inputs and use StringJoin operator to output the concatentation result.
+
+    Naming Ops (code). This simple example shows how to name your ops. This is optional but recommended practice for sophisticated graphs.
+
+    Basic Operations (code). This example shows base math ops and usage of Placeholders with and without default values when running the session.
+
+    Basic Tensors (code). A simple example to construct and inspect various types of tensors.
+
+    Basic GraphDef (code). An example that shows how to use GraphDef and Session api. Also shown is how to use the op names to provide the inputs and extract the outputs from the session run.
+
+    Basic I/O (code). An example to show how to use I/O API in tensorflow to read a file.
