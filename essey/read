@@ -47,3 +47,15 @@ add_introduction(basic-operations ${INTRODUCTION_SRC_PATH} basic-operations)
 add_introduction(basic-tensors ${INTRODUCTION_SRC_PATH} basic-tensors)
 add_introduction(basic-graphdef ${INTRODUCTION_SRC_PATH} basic-graphdef)
 add_introduction(basic-io ${INTRODUCTION_SRC_PATH} basic-io)
+
+
+// testffi/libs/api.cpp#define EXPORT extern "C" __attribute__((visibility("default"))) __attribute__((used))#include <cstring>EXPORT
+int add(int a, int b) {
+   return a + b;
+}EXPORT
+char* capitalize(char *str) {
+   static char buffer[1024];
+   strcpy(buffer, str);
+   buffer[0] = toupper(buffer[0]);
+   return buffer;
+}
