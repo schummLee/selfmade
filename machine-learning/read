@@ -1,1 +1,93 @@
-ww
+CMake Deprecation Warning at gtest/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at gtest/googlemock/CMakeLists.txt:46 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at gtest/googletest/CMakeLists.txt:55 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Warning (dev) at gtest/googletest/cmake/internal_utils.cmake:218 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  gtest/googletest/CMakeLists.txt:71 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PythonInterp: /opt/homebrew/bin/python3.11 (found version "3.11.6") 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/a23/selfmade/git/wfrest/machine_learning/spotify-api-plusplus/gtest
+a23@192 gtest % makke
+zsh: command not found: makke
+a23@192 gtest % make
+[  2%] Building CXX object gtest/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[  4%] Linking CXX static library libgtest.a
+[  4%] Built target gtest
+[  6%] Building CXX object gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[  9%] Linking CXX static library libgtest_main.a
+[  9%] Built target gtest_main
+[ 11%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/SpotifyAPI.cpp.o
+[ 13%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/Album.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/AlbumSimple.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/Artist.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/ArtistSimple.cpp.o
+[ 23%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/AudioFeatures.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/Category.cpp.o
+[ 27%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/Context.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/Copyright.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/CurrentlyPlayingContext.cpp.o
+[ 34%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/CurrentlyPlayingTrack.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/Cursor.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/Device.cpp.o
+[ 41%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/Error.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/Followers.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/Image.cpp.o
+[ 48%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/PlayHistoryObject.cpp.o
+[ 51%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/Playlist.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/PlaylistSimple.cpp.o
+[ 55%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/PlaylistTrack.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/Recommendations.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/RecommendationsSeed.cpp.o
+[ 62%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/SavedAlbum.cpp.o
+[ 65%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/SavedTrack.cpp.o
+[ 67%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/Track.cpp.o
+[ 69%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/TrackLink.cpp.o
+[ 72%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/TrackSimple.cpp.o
+[ 74%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/User.cpp.o
+[ 76%] Building CXX object src/CMakeFiles/spotify-api-plusplus.dir/models/UserPublic.cpp.o
+[ 79%] Linking CXX shared library libspotify-api-plusplus.dylib
+[ 79%] Built target spotify-api-plusplus
+[ 81%] Building CXX object CMakeFiles/TestEndpoints.dir/tests/TestEndpoints.cpp.o
+[ 83%] Linking CXX executable TestEndpoints
+ld: warning: ignoring duplicate libraries: 'gtest/googlemock/gtest/libgtest.a'
+[ 83%] Built target TestEndpoints
+[ 86%] Building CXX object gtest/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.o
+[ 88%] Building CXX object gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[ 90%] Linking CXX static library libgmock.a
+[ 90%] Built target gmock
+[ 93%] Building CXX object gtest/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o
+[ 95%] Building CXX object gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o
+[ 97%] Building CXX object gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[100%] Linking CXX static library libgmock_main.a
+[100%] Built target gmock_main
