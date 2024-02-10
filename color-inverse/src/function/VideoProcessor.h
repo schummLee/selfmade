@@ -19,6 +19,9 @@ public:
     void SetDesiredFPS(double fps);
     double GetDesiredFPS() const;
 
+    bool HasNextFrame();
+    cv::Mat GetNextFrame();
+
 private:
     cv::VideoCapture cap;
     double desiredFPS;
@@ -35,4 +38,3 @@ private:
 };
 
 #endif // VIDEO_PROCESSOR_H
-
