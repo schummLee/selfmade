@@ -11,7 +11,6 @@
 #include "../functions/TextOverlay.h"
 #include "../functions/FrameSaver.h"
 
-
 void kernel_as_multithreading_enaplied_as_decentralized() 
 {
     // Initialize VideoProcessor with video file path and desired FPS
@@ -62,21 +61,21 @@ void determineWeatherConditions(const std::string& inputVideoPath) {
         cv::Mat frame = videoProcessor.GetNextFrame();
 
         // Convert the frame to grayscale
-        cv::Mat grayFrame = grayscaleConverter.Convert(frame);
+        // cv::Mat grayFrame = grayscaleConverter.ConvertToGrayscale(frame);
 
-        // Apply edge detection
-        cv::Mat edges = edgeDetector.DetectEdges(grayFrame);
+        // // Apply edge detection
+        // cv::Mat edges = edgeDetector.DetectEdges(grayFrame);
 
-        // Apply histogram equalization
-        cv::Mat equalizedFrame = histogramEqualizer.Equalize(grayFrame);
+        // // Apply histogram equalization
+        // cv::Mat equalizedFrame = histogramEqualizer.Equalize(grayFrame);
 
-        // Apply text overlay indicating weather conditions
-        cv::Mat annotatedFrame = textOverlay.AddText(equalizedFrame, "Weather: Sunny");
+        // // Apply text overlay indicating weather conditions
+        // cv::Mat annotatedFrame = textOverlay.AddText(equalizedFrame, "Weather: Sunny");
 
-        // Save or display the annotated frame
-        frameSaver.SaveFrame(annotatedFrame);
-        cv::imshow("Annotated Frame", annotatedFrame);
-        cv::waitKey(30); // Adjust the delay between frames if needed
+        // // Save or display the annotated frame
+        // frameSaver.SaveFrame(annotatedFrame);
+        // cv::imshow("Annotated Frame", annotatedFrame);
+        // cv::waitKey(30); // Adjust the delay between frames if needed
     }
 }
 
