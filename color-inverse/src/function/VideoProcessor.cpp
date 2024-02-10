@@ -1,4 +1,3 @@
-
 #include "VideoProcessor.h"
 
 void VideoProcessor::ProcessVideo() 
@@ -60,3 +59,14 @@ void VideoProcessor::ProcessFrame(cv::Mat frame)
     // Process the frame here
 }
 
+bool VideoProcessor::HasNextFrame() 
+{
+    return cap.isOpened() && cap.grab();
+}
+
+cv::Mat VideoProcessor::GetNextFrame() 
+{
+    cv::Mat frame;
+    cap >> frame;
+    return frame;
+}
