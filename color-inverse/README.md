@@ -42,6 +42,11 @@ This project aims to demonstrate the use of image processing techniques for colo
     cmake ..
     make
     ```
+    or you can build it with my install.sh
+
+    ...bash
+    bash install.sh
+    into target folder and cd maunally
 
 ## Usage
 
