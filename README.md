@@ -11,3 +11,4 @@ adding new trading bot into new section of selfmade
 prmise u will lik it and thanks to the contibution of new trade-bot as community
 cbaciba to ohn
 thanks to all contribution , this project is for infomation purpose only
+project idle for color-inverse and nein feine crypto engage
