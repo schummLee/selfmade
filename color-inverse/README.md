@@ -64,6 +64,8 @@ This project aims to demonstrate the use of image processing techniques for colo
 
 Contributions are welcome! Feel free to open issues or pull requests for any improvements or fixes.
 
+Cunrrent Contributor : me and myself 
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
