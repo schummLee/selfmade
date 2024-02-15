@@ -6,3 +6,6 @@ due to the share amount of dataset we acquired and needed , we being able to pro
 
 no exact and extra contribution needed in current project 
 but in urge need for other contribution as mentioned earlier
+
+
+new template is now will be avilaible on template/test first
