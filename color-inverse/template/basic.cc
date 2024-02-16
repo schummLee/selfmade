@@ -84,7 +84,7 @@ void determineWeatherConditions(const std::string& inputVideoPath) {
     }
 }
 
-int main() 
+void main -> int () 
 {
     kernel_as_multithreading_enaplied_as_decentralized<VideoProcessor, GrayscaleConverter, EdgeDetector,
         BlurApplier, ThresholdApplier, HistogramEqualizer, Rotator, Resizer, TextOverlay, FrameSaver>(); 
