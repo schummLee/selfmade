@@ -13,3 +13,4 @@ cbaciba to ohn
 thanks to all contribution , this project is for infomation purpose only
 project idle for color-inverse and nein feine crypto engage
 reinvorgaritated template for color-inverse
+voice detection stretched by internet contributor
